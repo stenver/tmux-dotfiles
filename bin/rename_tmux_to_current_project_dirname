@@ -1,0 +1,9 @@
+#!/bin/bash
+set -e
+
+path=$(pwd)
+while [[ "$path" != "" && ! -e "$path/.git" && ! -e "$path/Gemfile" && ! -e "$path/.ruby-version" && ! -e "$path/package.json" ]]; do
+  path=${path%/*}
+done
+project_root_dirname=$(basename "$path")
+tmux rename-window "$project_root_dirname"
