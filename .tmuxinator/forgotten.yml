@@ -3,9 +3,13 @@
 name: forgotten
 root: ~/
 
-windows: 
-  - main:
+windows:
+  - game:
       layout: even-horizontal
       panes:
         - cd ~/Google\ Drive/Documents/D\&D/forgotten_terrors
-        - cd ~/dnd/forgotten_horrors 
+        - cd ~/Google\ Drive/Documents/D\&D/
+  - blog:
+      layout: even-horizontal
+      panes:
+        - cd ~/dnd/forgotten_horrors
