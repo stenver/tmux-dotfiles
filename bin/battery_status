@@ -1,0 +1,25 @@
+#!/bin/bash
+set -e
+
+battery_status=$(pmset -g batt | grep Internal | cut -f2)
+IFS=';' read -ra battery_status_array <<< "$battery_status"
+
+percentage=${battery_status_array[0]}
+if [[ "${battery_status_array[1]}" == *"discharg"* ]]
+then
+  power_source=🔋
+else
+  power_source=🔌
+fi
+if ! [[ "${battery_status_array[2]}" =~ (0:00)|(\(no\ estimate\)) ]]
+then
+  time_remaining="${battery_status_array[2]}"
+fi
+
+if ((${percentage%'%'} <= 10))
+then
+  color="#[fg=green,bg=red,bright]"
+fi
+
+# Use double space after $power_source, because the unicode chars make the spacing weird
+echo "$color$power_source  $percentage $time_remaining"
