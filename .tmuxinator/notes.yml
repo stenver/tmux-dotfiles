@@ -1,0 +1,10 @@
+# ~/.tmuxinator/forgotten.yml
+
+name: forgotten
+root: ~/
+
+windows:
+  - notes:
+      layout: even-horizontal
+      panes:
+        - cd ~/Google\ Drive/notes

@@ -11,3 +11,7 @@ windows:
         - mongod --config /usr/local/etc/mongod.conf
         - postgres -D /usr/local/var/postgres
         - redis-server /usr/local/etc/redis.conf
+        - test_client_app:
+          - cd ~/salemove/sm-configuration/nginx/bin
+          - ./local_nginx -g "daemon off;"
+        # - /Applications/Docker/Docker\ Quickstart\ Terminal.app/Contents/Resources/Scripts/start.sh 
