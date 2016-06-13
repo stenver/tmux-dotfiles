@@ -23,7 +23,7 @@ windows:
           - cd ~/salemove/backend-web
           - ./start broccoli
         - business_wizard:
-          - cd ~/salemove/business_wizard
+          - cd ~/salemove/business-wizard
           - ./start
         - admin:
           - cd ~/salemove/admin
@@ -47,7 +47,7 @@ windows:
           - cd ~/salemove/visit-registry
           - ./start
         - operator_auth:
-          - cd ~/salemove/operator-authentication
+          - cd ~/salemove/operator_authentication
           - ./start
         - login:
           - cd ~/salemove/backend-web
@@ -107,7 +107,7 @@ windows:
         - android_factory:
           - cd ~/salemove/android-factory
           - ./start
-    - misc:
+  - misc:
       layout: main-vertical
       panes:
         - engagement_registry:
