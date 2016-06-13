@@ -7,116 +7,115 @@ windows:
   - core:
       layout: main-vertical
       panes:
-        api:
+        - api:
           - cd ~/salemove/api
           - ./start
-        test_app:
+        - test_app:
           - cd ~/salemove/test-app
           - ./start
-        sites:
+        - sites:
           - cd ~/salemove/sites
           - ./start
-  - front:
       layout: main-vertical
       panes:
-        broccoli:
+        - broccoli:
           - cd ~/salemove/backend-web
           - ./start broccoli
-        business_wizard:
+        - business_wizard:
           - cd ~/salemove/business_wizard
           - ./start
-        admin:
+        - admin:
           - cd ~/salemove/admin
           - ./start
   - messages:
       layout: main-vertical
       panes:
-        message_hub:
+        - message_hub:
           - cd ~/salemove/message-hub
           - ./start
-        kluster:
+        - kluster:
           - cd ~/salemove/kluster
           - ./start
-        tracktor:
+        - tracktor:
           - cd ~/salemove/tracktor
           - ./start
   - auth:
       layout: main-vertical
       panes:
-        visit-registry:
+        - visit-registry:
           - cd ~/salemove/visit-registry
           - ./start
-        operator-auth:
+        - operator-auth:
           - cd ~/salemove/operator-authentication
           - ./start
-        login:
+        - login:
           - cd ~/salemove/backend-web
           - ./start rails
   - stats:
       layout: main-vertical
       panes:
-        statistics:
+        - statistics:
           - cd ~/salemove/statistics_service
           - ./start
-        usage_metrics:
+        - usage_metrics:
           - cd ~/salemove/usage_metrics_recorder
           - ./start
-        cobra_recorder:
+        - cobra_recorder:
           - cd ~/salemove/cobra-recorder
           - ./start
   - exporting:
       layout: main-vertical
       panes:
-        crm_exporter:
+        - crm_exporter:
           - cd ~/salemove/crm-exporter
           - ./start
-        engagement_archiver:
+        - engagement_archiver:
           - cd ~/salemove/engagement-archiver
           - ./start
-        mailer:
+        - mailer:
           - cd ~/salemove/mailer
           - ./start
   - media:
       layout: main-vertical
       panes:
-        phone:
+        - phone:
           - cd ~/salemove/phone
           - ./start
-        omnicall:
+        - omnicall:
           - cd ~/salemove/omnicall
           - ./start
-        uplot:
+        - uplot:
           - cd ~/salemove/uplot
           - export SSL_CERT_FILE=~/certs/cacert.pem
           - ./bin/start_locally
   - background:
       layout: main-vertical
       panes:
-        recurring:
+        - recurring:
           - cd ~/salemove/recurring_jobs
           - ./start
-        cachy:
+        - cachy:
           - cd ~/salemove/cachy
           - ./start
-        kluster_proxy:
+        - kluster_proxy:
           - cd ~/salemove/kluster-proxy
           - ./start
-        freestylo:
+        - freestylo:
           - cd ~/salemove/freestylo
           - ./start
-        android_factory:
+        - android_factory:
           - cd ~/salemove/android-factory
           - ./start
     - misc:
       layout: main-vertical
       panes:
-        engagement_registry:
+        - engagement_registry:
           - cd ~/salemove/engagement-registry
           - ./start
-        overseer:
+        - overseer:
           - cd ~/salemove/overseer
           - export SSL_CERT_FILE=~/certs/cacert.pem
           - ./start
-        visitor_information:
+        - visitor_information:
           - cd ~/salemove/visitor-information
           - ./start
