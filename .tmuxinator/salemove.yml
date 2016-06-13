@@ -16,6 +16,7 @@ windows:
         - sites:
           - cd ~/salemove/sites
           - ./start
+  - front:
       layout: main-vertical
       panes:
         - broccoli:
@@ -42,10 +43,10 @@ windows:
   - auth:
       layout: main-vertical
       panes:
-        - visit-registry:
+        - visit_registry:
           - cd ~/salemove/visit-registry
           - ./start
-        - operator-auth:
+        - operator_auth:
           - cd ~/salemove/operator-authentication
           - ./start
         - login:
