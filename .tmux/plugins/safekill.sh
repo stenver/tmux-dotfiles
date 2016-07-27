@@ -5,7 +5,6 @@ function safe_end_procs {
     old_ifs="$IFS"
     IFS=$'\n'
     for pane_set in $1; do
-        echo "LOL"
         pane_id=$(echo "$pane_set" | awk -F " " '{print $1}')
         pane_proc=$(echo "$pane_set" | awk -F " " '{print tolower($2)}')
         cmd="C-c"
