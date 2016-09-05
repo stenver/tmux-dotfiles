@@ -1,0 +1,12 @@
+# ~/.tmuxinator/salemove.yml
+
+name: eagronom
+root: ~/
+
+windows:
+  - core:
+      layout: main-vertical
+      panes:
+        - core:
+          - cd ~/eagronom/core
+          - rails s
