@@ -1,0 +1,12 @@
+# ~/.tmuxinator/work.yml
+
+name: work
+root: ~/
+
+windows:
+  - core:
+      layout: main-vertical
+      panes:
+        - core:
+          - cd ~/eagronom/core
+          - rails s
