@@ -8,12 +8,6 @@ windows:
       layout: tiled
       panes:
         - rabbitmq-server
-        - mongod --config /usr/local/etc/mongod.conf
+        # - mongod --config /usr/local/etc/mongod.conf
         - postgres -D /usr/local/var/postgres
         - redis-server /usr/local/etc/redis.conf
-        - test_client_app:
-          - cd ~/salemove/sm-configuration/nginx/bin
-          - ./local_nginx -g "daemon off;"
-        - mask_dns:
-          - cd ~/salemove/sm-configuration/dnsmasq/bin
-          - ./local_dnsmasq --keep-in-foreground

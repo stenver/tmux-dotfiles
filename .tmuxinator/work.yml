@@ -9,4 +9,3 @@ windows:
       panes:
         - core:
           - cd ~/eagronom/core
-          - rails s
