@@ -10,3 +10,6 @@ windows:
         - core:
           - cd ~/eagronom/core
           - rails s
+        - guard:
+          - cd ~/eagronom/core
+          - guard
